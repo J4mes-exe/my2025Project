@@ -15,7 +15,7 @@ class TeamService {
         val teamsStorage: MutableMap<Identifier, Team> = mutableMapOf()
     }
 
-    // Generate list of teams for one round
+    // Generate teams
     fun generateTeamsForOneRound(teamsNumber: Int): List<Team> {
         val teams = mutableListOf<Team>()
 
@@ -25,7 +25,6 @@ class TeamService {
             teamsStorage[teamId] = team
             teams.add(team)
         }
-
         return teams
     }
 }

@@ -3,11 +3,11 @@ package jetbrains.kotlin.course.alias.util
 typealias Identifier = Int
 
 class IdentifierFactory {
-    // This will store the last unique identifier number.
+    // Store the last unique id
     private var counter: Int = 0
 
-    // This function will return the next unique identifier
+    // Return next unique id
     fun uniqueIdentifier(): Identifier {
-        return ++counter // Increment counter and return the new value
+        return ++counter
     }
 }
